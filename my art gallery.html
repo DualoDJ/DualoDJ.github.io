@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1a1a1a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #bbbbbb;
+      font-size: 1.1rem;
+    }
+
+    .description {
+      margin-top: 0.5rem;
+      color: #dddddd;
+      font-size: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 2rem auto;
+      padding: 0.6rem 1.5rem;
+      background-color: #ffffff10;
+      color: #ffffffcc;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid #ffffff30;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #ffffff20;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .quote,
+      .description {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Art Gallery</h1>
+    <p class="quote">"Art enables us to find ourselves and lose ourselves at the same time."</p>
+    <p class="description">(These are some of my artworks in my high school days)</p>
+  </header>
+
+  <section class="gallery">
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221029_095144.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221029_095144.jpg" alt="Artwork 1">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221031_193107.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221031_193107.jpg" alt="Artwork 2">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221124_062621.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221124_062621.jpg" alt="Artwork 3">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230313_061754.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230313_061754.jpg" alt="Artwork 4">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230426_203534.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230426_203534.jpg" alt="Artwork 5">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230613_192054.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230613_192054.jpg" alt="Artwork 6">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20231001_194900.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20231001_194900.jpg" alt="Artwork 7">
+    </a>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="blog.html" class="back-button">← Back to Blog</a>
+  </div>
+</body>
+</html>
