@@ -2,76 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Art Gallery</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
+      background: #1a1a1a;
+      color: #f0f0f0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: white;
+    }
+
+    header {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #bbbbbb;
+      font-size: 1.1rem;
+    }
+
+    .description {
+      margin-top: 0.5rem;
+      color: #dddddd;
+      font-size: 1rem;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .gallery img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
       transition: transform 0.3s ease;
+      cursor: pointer;
     }
 
     .gallery img:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
-    .back {
+    .back-button {
       display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.5rem;
-      background: white;
-      color: black;
+      margin: 2rem auto;
+      padding: 0.6rem 1.5rem;
+      background-color: #ffffff10;
+      color: #ffffffcc;
+      font-weight: bold;
       text-decoration: none;
       border-radius: 6px;
-      transition: background 0.3s, color 0.3s;
+      border: 1px solid #ffffff30;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
 
-    .back:hover {
-      background: gray;
-      color: white;
+    .back-button:hover {
+      background-color: #ffffff20;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .quote,
+      .description {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>My Art Gallery</h1>
-  <p>Here are some of the artworks I've created in my free time.</p>
+  <header>
+    <h1>My Art Gallery</h1>
+    <p class="quote">"Art enables us to find ourselves and lose ourselves at the same time."</p>
+    <p class="description">(These are some of my artworks in my high school days)</p>
+  </header>
 
-  <div class="artworks">
-    <img src="20221029_095144.jpg/art1.png" alt="20221029_095144.jpg 1">
-    <img src="20221031_193107.jpg/art2.png" alt="20221031_193107.jpg 2">
-    <img src="20230313_061754.jpga/rt3.png" alt="20230313_061754.jpg 3">
-    <img src="20230313_061754.jpg/art4.png" alt="20230313_061754.jpg 4">
-    <img src="20230426_203534.jpg/art5.png" alt="20230426_203534.jpg 5">
-    <img src="20230613_192054.jpg/art6.png" alt="20230613_192054.jpg 6">
-    <img src="20231001_194900.jpg/art7.png" alt="20231001_194900.jpg 8">
-    <!-- You can add more images here -->
+  <section class="gallery">
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221029_095144.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221029_095144.jpg" alt="Artwork 1">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221031_193107.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221031_193107.jpg" alt="Artwork 2">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221124_062621.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20221124_062621.jpg" alt="Artwork 3">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230313_061754.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230313_061754.jpg" alt="Artwork 4">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230426_203534.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230426_203534.jpg" alt="Artwork 5">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230613_192054.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20230613_192054.jpg" alt="Artwork 6">
+    </a>
+    <a href="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20231001_194900.jpg" target="_blank">
+      <img src="https://raw.githubusercontent.com/DualoDJ/DualoDJ.github.io/main/artworks/20231001_194900.jpg" alt="Artwork 7">
+    </a>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="blog.html" class="back-button">← Back to Blog</a>
   </div>
-
-  <a href="blog.html" class="back">← Back to Hobbies</a>
 </body>
 </html>
-
