@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to my personal website</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: url('1.png') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.55);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 2.8rem;
+        text-shadow: 2px 2px 5px #000;
+    }
+    p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        text-shadow: 1px 1px 3px #000;
+        margin-bottom: 2rem;
+    }
+    .menu {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu a {
+        padding: 0.6rem 1.2rem;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+    .menu a:hover {
+        background: rgba(255,255,255,0.3);
+        transform: translateY(-3px);
+    }
+</style>
+</head>
+<body>
+<div class="overlay">
+    <h1>Welcome to my personal website</h1>
+    <p>Discover my personal journey, passions, and ways to connect with me.</p>
+    <div class="menu">
+        <a href="about.html">About Me</a>
+        <a href="blog.html">My Hobbies</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+</body>
+</html>

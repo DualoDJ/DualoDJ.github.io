@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Hobbies</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #111, #0a0a0a);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+  }
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  .link-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #0ff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+  }
+  .link-card:hover {
+    background: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    transform: translateY(-3px);
+  }
+  .back-link {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    border: 1px solid #0ff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .back-link:hover {
+    background: #0ff;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+
+<h1>My Hobbies</h1>
+<div class="links-container">
+  <a href="my art gallery.html" class="link-card">🎨 My Art Gallery</a>
+  <a href="sunsets over mountains.html" class="link-card">🌄 Sunsets Over Mountains</a>
+  <a href="iron horizon.html" class="link-card">🏍 Iron Horizon</a>
+</div>
+
+<a href="index.html" class="back-link">← Back to Home</a>
+</body>
+</html>
