@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunsets Over Mountains</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding: 0 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 2.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .back:hover {
+      background: #444444;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sunsets Over Mountains</h1>
+  <p>A collection of my best sunset photos taken during hikes and travels.</p>
+
+  <div class="gallery">
+    <img src="sunset/sunset1.jpg" alt="Sunset 1">
+    <img src="sunset/sunset2.jpg" alt="Sunset 2">
+    <img src="sunset/sunset3.jpg" alt="Sunset 3">
+    <img src="sunset/sunset4.jpg" alt="Sunset 4">
+    <!-- Add more sunset images as needed -->
+  </div>
+
+  <a href="blog.html" class="back">← Back to Hobbies</a>
+</body>
+</html>
